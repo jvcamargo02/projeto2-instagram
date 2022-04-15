@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
 
 }
 .top {
@@ -14,6 +15,10 @@
     left: 0;
     top: 0;
     z-index: 1;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .header{
@@ -22,6 +27,7 @@
     align-items: center;
     width: 68%;
     justify-content: space-between;
+    
 
 }
 
@@ -30,63 +36,383 @@
     align-items: center;
 }
 
+
 .barraDePesquisa {
     width: 215px;
     height: 28px;
     border-radius: 3px;
     border: 1px solid #dbdbdb;
-    color: #dbdbdb;
     font-size: 12px;
     display: flex;
-    justify-content: center;
     align-items: center;
+
 }
 
+.barraDePesquisa > * {
+    box-shadow: 0 0 0 0; 
+    outline:0; 
+    background-color: #f0f0f0; 
+    text-align: center; 
+    height: 95%; 
+    width: 100%; 
+    border: none; 
+    transition: none;
+}
+
+.menudireita{
+    width: 140px; 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 20px;
+}
+
+.menudireita > * {
+    cursor: pointer;
+}
 .content{
     margin-top: 84px;
     width: 935px;
     display: flex;
     justify-content: space-between;
+   
 }
 
 .posts {
-    width: 65%;
-    height: 1000px;
+    width: 614px;
     
 }
 .sidebar {
-    background-color: black;
-    width: 32%;
-    height: 1000px;
+    width: 293px;
+    height: auto;
 
 }
 
 .stories {
-    width: 100%;
+    
     height: 118px;
+    padding-left: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+
+}
+
+.story{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 18px 0px 34px 18px;
-    box-sizing: border-box;
-    overflow: auto;
+    flex-direction: column;
+    margin-right: 14px;
+}
+
+.fotodeperfil{
+    background-image: url(images/stories_background.jpg);
+    background-size: 66px 66px;
+    width: 66px;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    height: 66px;
+    cursor: pointer;
+}
+
+.scroll{
+    position: absolute; 
+    top: 33%; 
+    left: 94.5%;
+    
+   
+}
+
+.scroll > ion-icon {
+    font-size: 34px; 
+    background-color: #ffffff; 
+    clip-path: circle(35%); 
+    color: #dbdbdb; 
+    
+}
+
+.fotodeperfil > img {
+    border-radius: 50%; 
+    width: 56px; 
+    margin: 5px 0px 0px 5px; 
+    object-fit: cover; 
+    height: 56px;
 
 }
 
-.fotosdeperfil{
+.txtperfil{
+font-size: 12px; 
+line-height: 19px;
+font-weight: 400;
+cursor: pointer;
+}
+
+.feed {
+    margin-top: 24px;
     width: 100%;
-    position: absolute;
-    left: 23px;
-    top: 24px;
+}
+
+.publicacoes{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99.9%;
+    background-color: #f0f0f0;
+}
+
+.postsicons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 14px 18px 14px 18px;
+    box-sizing: border-box;
 
+    width: 100%;
 }
 
-.fotosdeperfil:nth-child(2n-1){
-margin-left: -100px;
-}
-
-.backgroundstories{
+.mainuser{
+    width: 100%;
+    height: 56px;
     display: flex;
+    align-items: center;
+}
+
+.mainuser > * {
+    cursor: pointer;
+}
+
+.sidebarusers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    color: #262626;
+
+}
+
+.txtmiddle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+}
+
+.perfil{
+    margin-top: 16px;
+    display: flex;
+}
+
+.perfis{
+    color:black;
+} 
+
+.footer{
+    margin-top: 34px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #c7c7c7;
+
+}
+
+.txtmainuser{
+    margin-left: 17px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.txtmiddle{
+    font-size: 12px;
+    color: #535353;
+    font-weight: 500;
+}
+
+.nomeperfil{
+    margin-left: 11px;
+    color: #262626;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+#seguevoce{
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.perfil > img {
+    width: 32px;
+    height: 32px;
+}
+
+.followbtn{
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 32px;
+    color: #139ef2;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.publicacao{
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+}
+
+
+.topmobile{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    display: none;
+
+}
+ .userid{
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    align-items: center; 
+    padding-right: 18px; 
+    box-sizing: border-box;
+    font-weight: 500;
+ }
+
+ .userid > div > * {
+     cursor: pointer;
+ }
+ .footermobile{
+     height: 54px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 20px;
+     box-sizing: border-box;
+     background-color: #ffffff;
+     border-top: 1px solid #dbdbdb;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     font-size: 17px;
+     display: none;
+ }
+
+ .footermobile > * {
+     cursor: pointer;
+ }
+
+ strong{
+     cursor: pointer;
+ }
+
+ .postsicons > div > * {
+     cursor: pointer;
+ }
+@media (max-width:935px){
+    .sidebar{
+        display: none;
+    }
+
+    .content{
+        justify-content: center;
+        width: 100%;
+    }
+    
+
+    .header{
+        width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:614px) {
+
+    .barraDePesquisa{
+        display: none;
+
+    }
+
+    .posts{
+        width: 100%;
+    }
+    .publicacao > img {
+        width: 100%;
+    }
+
+    .publicacao{
+        width: 100%;
+    }
+
+    .top{
+        display: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .topmobile{
+        display: inline;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+
+    }
+
+    .topmobile > *{
+        cursor: pointer;
+    }
+
+    .content{
+        margin-top: 48px;
+    }
+
+    .stories{
+        background-color: transparent;
+        border: none;
+    }
+
+    .fotodeperfil{
+        clip-path: circle(50%);
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .feed{
+        margin: 0px;
+    }
+
+    .publicacao > img{
+        width: 100%;
+    
+    }
+
+    .footermobile{
+        display: inline;
+        display: flex;
+    }
 }
